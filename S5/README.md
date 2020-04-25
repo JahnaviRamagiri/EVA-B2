@@ -21,6 +21,7 @@ Result:
 1.	Total Parameters: 13160
 2.	Best Training Accuracy: 99.17
 3.	Best Testing Accuracy: 99.18
+
 Analysis:
 1.	Parameters are higher than 10k
 2.	Very less under fitting : Testing Accuracy = Training Accuracy which is implies a good model
@@ -43,6 +44,7 @@ Results:
 1.	Parameters: 13160
 2.	Best Training Accuracy: 99.19
 3.	Best Test Accuracy: 99.29
+
 Analysis:
 1.	Efficiency has increased: Adding Dropout and batchnorm has worked.
 2.	Under fitting in model expected as training includes dropout while testing doesn’t.
@@ -56,6 +58,7 @@ Exp 3
 Target: To Reduce Parameters using GAP
 1.	Add GAP, slight changes made to the model
 2.	Reduce batch size as the no. of parameters are assumed to be reduced on usage of GAP
+
 Results:
 1.	Parameters: 9752
 2.	Best Training Accuracy: 
@@ -107,10 +110,12 @@ Exp 5:
 Target: To get the desired accuracy in lesser no. of epochs  and create a consistent model
 1.	Change learning rate to achieve desired accuracy in lesser epochs
 2.	Introduce LR scheduler (lr=0.02, step = 4, gamma = 0.5)
+
 Results:
 1.	Parameters: 9752
 2.	Best Training Accuracy: 99.16 (13th epoch)
 3.	Best Test Accuracy: 99.49 (13th epoch)
+
 Analysis:
 1.	9.4 Or above is hit 8 times before 15th epoch and 12 times before 20 epochs.
 2.	Using lr of 0.2 and reducing it by half for every 4th epoch has helped us reach desired accuracy (99.40) more quickly and more consistently.
