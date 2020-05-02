@@ -43,7 +43,7 @@ _For L1:_
 
 Values checked for : 1e-5, 5e-5, 0.0001, 0.0005, 0.001, 0.005, 0.01, 0.05
 
-[![](RackMultipart20200502-4-16zrc5m_html_448a0d488acf249.png)]https://github.com/JahnaviRamagiri/EVA-B2/blob/master/S6/Results/L1Lambda.PNG
+![]https://github.com/JahnaviRamagiri/EVA-B2/blob/master/S6/Results/L1Lambda.PNG
 
 The value of 1e-5, gave the best validation accuracy.
 
