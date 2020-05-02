@@ -57,7 +57,7 @@ Here too the Lambda value of 1e-5 gave the best validation accuracy.
 
 Hence, in the model we used the lambda value of 1e-5 (0.00001) for both L1 and L2.
 
-**Validation Accuracy curves for all 8 task:**  https://github.com/JahnaviRamagiri/EVA-B2/blob/master/S6/Results/validation%20accuracy.png]
+**Validation Accuracy curves for all 8 task:**  https://github.com/JahnaviRamagiri/EVA-B2/blob/master/S6/Results/validation%20accuracy.png
 
 **Validation Loss curves for all 8 task:** 
 https://github.com/JahnaviRamagiri/EVA-B2/blob/master/S6/Results/validation%20loss.png
