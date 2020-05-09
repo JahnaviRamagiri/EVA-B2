@@ -40,13 +40,14 @@ Achieved accuracy of
 
 **Misclassified Images:**
 
-[![](RackMultipart20200509-4-6go8lq_html_dfa9b2c8c1b01f83.png)](https://github.com/abksyed/EVA4/blob/master/S7/Images/MissClassifiedImages.png)
+![Misclassified Images](https://github.com/JahnaviRamagiri/EVA-B2/blob/master/S7/results/misclassified.png)
 
 **Train and Test Accuracies and Loss:**
 
-[![](RackMultipart20200509-4-6go8lq_html_9d9c2ab2e4675634.png)](https://github.com/abksyed/EVA4/blob/master/S7/Images/Test-Train%20Accuracy%20and%20Loss.png)
+![Train and Test Accuracies and Loss](https://github.com/JahnaviRamagiri/EVA-B2/blob/master/S7/results/Train_Test%20accuracy%20and%20loss.png)
 
-![**Train vs Test Accuracy:**](https://github.com/JahnaviRamagiri/EVA-B2/blob/master/S7/results/Train%20vs%20test.png)
+**Train vs Test Accuracy:**
+![Train vs Test Accuracy](https://github.com/JahnaviRamagiri/EVA-B2/blob/master/S7/results/Train%20vs%20test.png)
 
 **Class Wise Accuracies:**
 
