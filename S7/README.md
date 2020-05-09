@@ -27,7 +27,7 @@ Achieve the following on the  **CIFAR-10**  dataset:
 **Model Statistics:**
 
 - Batch Size: 128
-- Number of Parameters: 256,440
+- Number of Parameters: 265,440
 - Dropout: 0.1
 - GhostBatchNormalization
 - Epochs: 50
