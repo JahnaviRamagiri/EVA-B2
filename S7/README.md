@@ -46,7 +46,7 @@ Achieved accuracy of
 
 [![](RackMultipart20200509-4-6go8lq_html_9d9c2ab2e4675634.png)](https://github.com/abksyed/EVA4/blob/master/S7/Images/Test-Train%20Accuracy%20and%20Loss.png)
 
-[**Train vs Test Accuracy:**](https://github.com/JahnaviRamagiri/EVA-B2/blob/master/S7/results/Train%20vs%20test.png)
+![**Train vs Test Accuracy:**](https://github.com/JahnaviRamagiri/EVA-B2/blob/master/S7/results/Train%20vs%20test.png)
 
 **Class Wise Accuracies:**
 
