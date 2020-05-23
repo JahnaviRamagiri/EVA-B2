@@ -38,15 +38,15 @@ Achieved accuracy of
 
 Misclassified Images:
 
-![MissClassifiedImages.png](https://github.com/abksyed/EVA4/blob/master/S8/Images/MissClassify.png)
+![MissClassifiedImages](https://github.com/JahnaviRamagiri/EVA-B2/blob/master/S8/output/MissClassify.png)
 
 Train and Test Accuracies and Loss:
 
-![Test-Train Accuracy and Loss.png](https://github.com/abksyed/EVA4/blob/master/S8/Images/LossandAcc.png)
+![Test-Train Accuracy and Loss](https://github.com/JahnaviRamagiri/EVA-B2/blob/master/S8/output/LossandAcc.png)
 
 Train vs Test Accuracy:
 
-![Test-vs-Train Accuracy.png](https://github.com/abksyed/EVA4/blob/master/S8/Images/TestvTrainAcc.png)
+![Test-vs-Train Accuracy](https://github.com/JahnaviRamagiri/EVA-B2/blob/master/S8/output/TestvTrainAcc.png)
 
 Class Wise Accuracies:
 
