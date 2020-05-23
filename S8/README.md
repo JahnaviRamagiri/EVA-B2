@@ -59,5 +59,5 @@ Accuracy of   dog : 83 %
 Accuracy of  frog : 94 %
 Accuracy of horse : 92 %
 Accuracy of  ship : 96 %
-Accuracy of truck : 95 %
+Accuracy of truck : 95 % 
 
