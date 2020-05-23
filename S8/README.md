@@ -49,7 +49,6 @@ Train vs Test Accuracy:
 ![Test-vs-Train Accuracy](https://github.com/JahnaviRamagiri/EVA-B2/blob/master/S8/output/TestvTrainAcc.png)
 
 Class Wise Accuracies:
-
 Accuracy of plane : 91 %
 Accuracy of   car : 93 %
 Accuracy of  bird : 91 %
