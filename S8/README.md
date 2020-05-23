@@ -8,9 +8,9 @@
 
 [Syed Abdul Khader](https://canvas.instructure.com/courses/1804302/users/25685109)
 
-Colab file:(https://colab.research.google.com/drive/17Gxfnr4UxEpRPvtS4WZJCVLk4njc3_Hm?usp=sharing)
+Colab file:(https://colab.research.google.com/drive/1h8p58mbZn-TeWB_mSMdpKupKa63xxIAc?authuser=1#scrollTo=BjgKiK1-cswd)
 
-To run the model, we need to upload all the necessary packagesto the colab directory. The packages can be found in the S7 folder of EVA4 repo.
+To run the model, we need to upload all the necessary packagesto the colab directory. The packages can be found in the S8 folder of EVA4 repo.
 
 
 ### **Objective**
@@ -33,8 +33,8 @@ Achieve the following on the **CIFAR-10** dataset:
 
 Achieved accuracy of
 
-**Test - 91.58%**
-**Train - 96.66%**
+**Test - 91.71%**
+**Train - 98.14%**
 
 Misclassified Images:
 
@@ -50,13 +50,22 @@ Train vs Test Accuracy:
 
 Class Wise Accuracies:
 Accuracy of plane : 91 %
+
 Accuracy of   car : 93 %
+
 Accuracy of  bird : 91 %
+
 Accuracy of   cat : 83 %
+
 Accuracy of  deer : 94 %
+
 Accuracy of   dog : 83 %
+
 Accuracy of  frog : 94 %
+
 Accuracy of horse : 92 %
+
 Accuracy of  ship : 96 %
+
 Accuracy of truck : 95 % 
 
