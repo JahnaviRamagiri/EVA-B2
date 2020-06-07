@@ -23,16 +23,28 @@ Objective
 Achieve the following on the CIFAR-10 dataset:
 
 Make sure to Add CutOut to your code. It should come from your transformations (albumentations)
+
 Use this repo: https://github.com/davidtvs/pytorch-lr-finder (Links to an external site.)
+
 Move LR Finder code to your modules
+
 Implement LR Finder (for SGD, not for ADAM)
+
 Implement ReduceLROnPlateau: https://pytorch.org/docs/stable/optim.html#torch.optim.lr_scheduler.ReduceLROnPlateau (Links to an external site.)
+
 Find best LR to train your model
+
 Use SDG with Momentum
+
 Train for 50 Epochs.
+
 Show Training and Test Accuracy curves
+
 Target 88% Accuracy.
+
 Run GradCAM on the any 25 misclassified images. Make sure you mention what is the prediction and what was the ground truth label.
+
+
 Model Statistics:
 Custom ResNet18 - BasicBlock - [2,2,2,2] - Last Layer Stride = 1 - So Final Output is 8 x 8!
 Batch Size: 128
@@ -41,9 +53,9 @@ Epochs: 50
 Results
 Achieved accuracy of
 
-Test - 92.53%
+Test - 92.44%
 
-Train - 97.59%
+Train - 96.51%
 
 Viewing Data:
 
@@ -58,34 +70,33 @@ Best LR: 0.043287612810830614
 Change in Learning Rate:
 ![ChangeLR](https://github.com/JahnaviRamagiri/EVA-B2/blob/master/S10/Results/changeLR.png)
 
-ChangeLR.png
+
 
 
 Train and Test Accuracies and Loss:
 ![Test-Train Accuracy and Loss](https://github.com/JahnaviRamagiri/EVA-B2/blob/master/S10/Results/Trair_test_acc_loss.png)
 
-Test-Train Accuracy and Loss.png
+
 
 Train vs Test Accuracy:
 ![Test-vs-Train Accuracy](https://github.com/JahnaviRamagiri/EVA-B2/blob/master/S10/Results/Train_vs_test.png)
 
-Test-vs-Train Accuracy.png
+
 
 Misclassified Images:
 
-![Test-vs-Train Accuracy](https://github.com/JahnaviRamagiri/EVA-B2/blob/master/S10/Results/missclass.png)
+![MissClassifiedImages](https://github.com/JahnaviRamagiri/EVA-B2/blob/master/S10/Results/missclass.png)
 
 MissClassifiedImages.png
 
 Entire GradCAM for Mis Classified Images (w.r.t Predicted Class):
 
-![Test-vs-Train Accuracy](https://github.com/JahnaviRamagiri/EVA-B2/blob/master/S8/output/TestvTrainAcc.png)
-Mis_HeatMap.png
+![MisClass_Pred](https://github.com/JahnaviRamagiri/EVA-B2/blob/master/S10/Results/mis_pred.png)
 
 Entire GradCAM for Mis Classified Images(w.r.t Actual Class):
 
-![Test-vs-Train Accuracy](https://github.com/JahnaviRamagiri/EVA-B2/blob/master/S8/output/TestvTrainAcc.png)
-Mis_GradCAM.png
+![MisClass_acc](https://github.com/JahnaviRamagiri/EVA-B2/blob/master/S10/Results/mis_act.png)
+
 
 Class Wise Accuracies:
 Accuracy of plane : 92 %
