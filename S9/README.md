@@ -10,7 +10,7 @@
 
 
 
-To run the model, we need to upload all the necessary packagesto the colab directory. The packages can be found in the S9 folder of EVA4 repo.
+To run the model, we need to upload all the necessary packagesto the colab directory. The packages can be found in the packages folder of S9 folder of EVA4-B2 repo.
 
 
 
@@ -43,6 +43,7 @@ Epochs: 15
 
 
 **Results**
+
 Achieved accuracy of
 
 Test - 86.95%
