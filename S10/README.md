@@ -99,6 +99,7 @@ Entire GradCAM for Mis Classified Images(w.r.t Actual Class):
 
 
 Class Wise Accuracies:
+
 Accuracy of plane : 92 %
 
 Accuracy of   car : 96 %
