@@ -19,7 +19,8 @@ Link to pynoob: (https://github.com/abksyed/pynoob)
 Link to model used: (https://github.com/JahnaviRamagiri/EVA-B2/blob/master/S10/packages/CusResNet.py)
 
 
-Objective
+**Objective:**
+
 Achieve the following on the CIFAR-10 dataset:
 
 Make sure to Add CutOut to your code. It should come from your transformations (albumentations)
@@ -45,21 +46,24 @@ Target 88% Accuracy.
 Run GradCAM on the any 25 misclassified images. Make sure you mention what is the prediction and what was the ground truth label.
 
 
-Model Statistics:
+**Model Statistics:**
+
 Custom ResNet18 - BasicBlock - [2,2,2,2] - Last Layer Stride = 1 - So Final Output is 8 x 8!
+
 Batch Size: 128
+
 Number of Parameters: 11,173,962
+
 Epochs: 50
-Results
+
+**Results:**
+
 Achieved accuracy of
 
 Test - 92.44%
 
 Train - 96.51%
 
-Viewing Data:
-
-DataView1 DataView2 DataView3 DataView4 DataView5
 
 Learning Rate Finder:
 
@@ -68,19 +72,19 @@ Learning Rate Finder:
 Best LR: 0.043287612810830614
 
 Change in Learning Rate:
+
 ![ChangeLR](https://github.com/JahnaviRamagiri/EVA-B2/blob/master/S10/Results/changeLR.png)
 
 
-
-
 Train and Test Accuracies and Loss:
+
 ![Test-Train Accuracy and Loss](https://github.com/JahnaviRamagiri/EVA-B2/blob/master/S10/Results/Trair_test_acc_loss.png)
 
 
 
 Train vs Test Accuracy:
-![Test-vs-Train Accuracy](https://github.com/JahnaviRamagiri/EVA-B2/blob/master/S10/Results/Train_vs_test.png)
 
+![Test-vs-Train Accuracy](https://github.com/JahnaviRamagiri/EVA-B2/blob/master/S10/Results/Train_vs_test.png)
 
 
 Misclassified Images:
