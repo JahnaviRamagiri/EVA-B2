@@ -19,34 +19,44 @@ Train - 89.05%
 
 Learning Rate Finder:
 
-![LRFinderPlot](https://github.com/JahnaviRamagiri/EVA-B2/blob/master/S10/Results/findLR.png)
+![LR vs Loss](https://github.com/JahnaviRamagiri/EVA-B2/blob/master/S11_superconvergence/Results_Final/LRvsLoss.png)
 
-Best LR: 0.043287612810830614
 
-Change in Learning Rate:
+Best loss 1.1508058843750388
 
-![ChangeLR](https://github.com/JahnaviRamagiri/EVA-B2/blob/master/S10/Results/changeLR.png)
+Best LR:  0.0092968331284346
+
+![LR vs Accuracy](https://github.com/JahnaviRamagiri/EVA-B2/blob/master/S11_superconvergence/Results_Final/LRvsAcc.png)
+
+Best acc 66.2109375
+
+Best LR:  0.01096065651201893
+
+Cyclic Change in Learning Rate:
+
+![ChangeLR](https://github.com/JahnaviRamagiri/EVA-B2/blob/master/S11_superconvergence/Results_Final/ChangeLR.png)
 
 Train and Test Accuracies and Loss:
 
-![Test-Train Accuracy and Loss](https://github.com/JahnaviRamagiri/EVA-B2/blob/master/S9/Results/train_test_loss_accuracy.png)
+![Test-Train Accuracy and Loss](https://github.com/JahnaviRamagiri/EVA-B2/blob/master/S11_superconvergence/Results_Final/Train_test_Loss_Acc.png)
 
 Train vs Test Accuracy:
 
-![Test-vs-Train Accuracy](https://github.com/JahnaviRamagiri/EVA-B2/blob/master/S9/Results/Train_vs_test.png)
+![Test-vs-Train Accuracy](https://github.com/JahnaviRamagiri/EVA-B2/blob/master/S11_superconvergence/Results_Final/TrainvsTest.png)
 
 Misclassified Images:
 
-![MissClassifiedImages](https://github.com/JahnaviRamagiri/EVA-B2/blob/master/S9/Results/missclass.png)
+![MissClassifiedImages](https://github.com/JahnaviRamagiri/EVA-B2/blob/master/S11_superconvergence/Results_Final/misclass.png)
 
 
-GradCAM HeatMap for Mis Classified Images: 
+GradCAM wrt Predicted for Mis Classified Images: 
 
-![Mis_HeatMap](https://github.com/JahnaviRamagiri/EVA-B2/blob/master/S9/Results/Heatmap.png)
+![Mis_Pred](https://github.com/JahnaviRamagiri/EVA-B2/blob/master/S11_superconvergence/Results_Final/Gradcam_pred.png)
 
-GradCAM for Mis Classified Images: 
+GradCAM wrt Actual for Mis Classified Images: 
 
-![Mis_GradCAM](https://github.com/JahnaviRamagiri/EVA-B2/blob/master/S9/Results/gradcam.png)
+![Mis_act](https://github.com/JahnaviRamagiri/EVA-B2/blob/master/S11_superconvergence/Results_Final/Gradcam_acc.png)
+
 
 
 **Class Wise Accuracies:**
