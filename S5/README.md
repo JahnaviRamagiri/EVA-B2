@@ -1,12 +1,13 @@
-Assignment S5
-1.	Your new target is:
-1.	99.4% (this must be consistently shown in your last few epochs, and not a one-time achievement)
-2.	Less than or equal to 15 Epochs
-3.	Less than 10000 Parameters
-2.	Do this in minimum 5 steps
+**Objective**
+
+1.	Build CNN Architecture to train MNIST Dataset
+2.  99.4% (consistently shown in last few epochs, and not a one-time achievement)
+3.	Less than or equal to 15 Epochs
+4.	Less than 10000 Parameters
+5.	Shown in minimum 5 steps
 
 
-Exp 1
+**Exp 1**
 Target: To build Basic Model without Batchnorm, Dropout, Gap layers
 1.	Get the set-up right
 2.	Set Transforms
@@ -32,7 +33,7 @@ Analysis:
 
 
 
-Exp 2 
+**Exp 2** 
 Target: To increase efficiency using Batchnorm and Dropout
 1.	Add Batchnorm
 2.	Add dropout = 0.1
@@ -54,7 +55,7 @@ Analysis:
 
 
 
-Exp 3 
+**Exp 3** 
 Target: To Reduce Parameters using GAP
 1.	Add GAP, slight changes made to the model
 2.	Reduce batch size as the no. of parameters are assumed to be reduced on usage of GAP
@@ -78,7 +79,7 @@ Analysis:
 
 
 
-Exp 4 
+**Exp 4** 
 Target: To further increase efficiency and create a consistent model
 1.	Add image augmentation 
 1.1.	 Image rotation by -7 to 7 degrees
@@ -106,7 +107,7 @@ Analysis:
 
 
 
-Exp 5: 
+**Exp 5:** 
 Target: To get the desired accuracy in lesser no. of epochs  and create a consistent model
 1.	Change learning rate to achieve desired accuracy in lesser epochs
 2.	Introduce LR scheduler (lr=0.02, step = 4, gamma = 0.5)
@@ -117,7 +118,7 @@ Results:
 3.	Best Test Accuracy: 99.49 (13th epoch)
 
 Analysis:
-1.	9.4 Or above is hit 8 times before 15th epoch and 12 times before 20 epochs.
+1.	99.4 Or above is hit 8 times before 15th epoch and 12 times before 20 epochs.
 2.	Using lr of 0.2 and reducing it by half for every 4th epoch has helped us reach desired accuracy (99.40) more quickly and more consistently.
 3.	Though Consistent, the accuracies did not exceed 99.49, thus a better LR scheduling is possible.
 4.	Target of attaining a consistent accuracy of 99.4 or above, within 10k parameters, within 15 epochs is reached.
