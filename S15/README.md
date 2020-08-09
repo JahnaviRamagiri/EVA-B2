@@ -163,7 +163,6 @@ depth images | [0.40361160039901733]| [0.19922664761543274]
        ```
     * Resulting output was converted to grey scale, since they save space and loading will be easier for the final assignment.
     * For one folder with 4000 images, it took aroung ~6 mins and so we happened to have patience for 10 long hours, to see the final dataset with 400K depth images
-    * All the modifications done in dense depth can be found here : https://github.com/ganeshkcs/DenseDepth
     
  * **Dataset Statistics** 
       * Wrote a custom Zip dataset loader, using pytorch, to read the images
