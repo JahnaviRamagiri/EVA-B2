@@ -167,8 +167,8 @@ depth images | [0.40361160039901733]| [0.19922664761543274]
  * **Dataset Statistics** 
       * Wrote a custom Zip dataset loader, using pytorch, to read the images
       * mean and std where calculated
-      * Code : https://github.com/ganeshkcs/EVA4B2/blob/master/S15A/S15_Statistics.ipynb
-      https://github.com/JahnaviRamagiri/EVA-B2/blob/master/S15A/S15_ZIP_OVERLAY.ipynb
+      * Code : https://github.com/JahnaviRamagiri/EVA-B2/blob/master/S15A/S15_Statistics.ipynb
+      
       
   # S15 Implementation
   
