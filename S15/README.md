@@ -172,6 +172,66 @@ depth images | [0.40361160039901733]| [0.19922664761543274]
       
   # S15 Implementation
   
+  **Aim** : Given an image with foreground objects and background image, predict the depth map as well as a mask for the foreground object.
+
+To implement this, a model had to be chosen which can do this job with least possible parameters (to reduce memory requirement) and the highest possible accuracy.
+
+After going through various models which included ResNEt18, DenseNEt among others, UNet was chosen.
+
+UNET Architechture:
+
+![](RackMultipart20200809-4-6dxtsk_html_17b96abe10c1826e.png)
+
+UNet, evolved from the traditional convolutional neural network, was first designed and applied in 2015 to process biomedical images. As a general convolutional neural network focuses its task on image classification, where input is an image and output is one label, but in biomedical cases, it requires us not only to distinguish whether there is a disease, but also to localise the area of abnormality.
+
+UNet is dedicated to solving this problem. The reason it is able to localise and distinguish borders is by doing classification on every pixel, so the input and output share the same size.
+
+Inspired from the usage of Medical domain, as the requirement in our problem statement is also to produce images as output, I have chosen UNet as my base model.
+
+Data Management: While creating the Dataset, as shown above, initially we had take png images for the dataset which happened to consume a lot of space. As a result, the overlay images, mask images all together resulted in a 20GB file.
+
+To reduce this computation cost, we have decided to convert all the images except foreground (fg) into jpg format. FFMPEG was used for these manipulations.
+
+The Background size was fixed to 224\*224\*3 as advised to, but we could play around with the foreground size. We experimented with 36\*36 pixel fg first, and found that this isn&#39;t giving good depth results. Then we switched to 96\*96. The output depth was much better for 96\*96 than 36\*36 but the best results were found with 112\*112. Thus, we stuck to 112\*112 as our fg size.
+
+**DNN Model:**
+
+Parameters – 86,31,810
+
+Epochs – 10
+
+Average Loss – Mask -0.65 Depth – 0.57
+
+- As we have 2 inputs to give and 2 outputs to get from a single network, the inputs (bg, fg\_bg) were concatenated to make a total of 6 channels (3+3). Therefore, the input to the network was of the size 224\*224\*6, which was the transformed to 64\*64\*6 to reduce computational requirement.
+- Architecture:
+
+Input (64\*64) -\&gt; double conv (64\*64) -\&gt; Downsample (32\*32-16\*16-8\*8) -\&gt; downsample (4\*4) -\&gt; Upsample (8\*8 – 16\*16 -32\*32 -64\*64) -\&gt;output =\&gt;Mask (64\*64) and Depth (64\*64)
+
+- The output, 64\*64, both depth and mask are obtained in grayscale.
+
+Optimizer – Adam and RMSProp optimizers were tried with, in which Adam gave better results.
+
+Scheduler – ReduceLROnPlateau – with a plateau of 2
+
+Loss: Binary Cross Entropy (BCE) and structural similarity index measure (SSIM) were used to calculate the loss, BCE turned out to be better of the both.
+
+Mask Loss - BCE
+
+Depth Loss - BCE
+
+Challenges:
+
+- Accessing Dataset: The challenges faced while creating the dataset were numerous. Handling the Dataset and training the model with the custom dataset was the hardest part.
+- While I was trying to attach the dataset to the model, I/O issues were getting raised in colab.
+- A folder with more than 10000 images would most likely crash
+- To solve this issue we created 100 sets of fg\_bg, fg\_bg\_mask, fg\_bg\_depth each with 4000 images in each folder. That resulted in 100\*4000\*3 = 1.2M images.
+- This made it easy to access the data, in an ordered way.
+- Time Management on Colab The next big issue was time. Colab allows only 8 hrs of continuous usage. Initially when I tried to run the model with 3000 images, that itself was taking around 40 min. As the no. of epochs and dataset were increasing, it was taking close to 8 hrs per run. Creating multiple accounts and parallel processing was a easy to go way to address this issue.
+- Another way would be to save the model and run from the place left. This also addresses Colab Crash which happened very often at the end.
+
+Time consumption: 45 min – (12\*3) 36k images.
+
+The link to the modules is:
   **Modules:**
   https://github.com/JahnaviRamagiri/EVA-B2/blob/master/S15/Modules/UnetModel.py
   
@@ -182,10 +242,15 @@ depth images | [0.40361160039901733]| [0.19922664761543274]
   https://github.com/JahnaviRamagiri/EVA-B2/blob/master/S15/Modules/Test.py
   
   https://github.com/JahnaviRamagiri/EVA-B2/blob/master/S15/Modules/Train.py
-  https://github.com/JahnaviRamagiri/EVA-B2/blob/master/S15/Modules/Results.py
-  https://github.com/JahnaviRamagiri/EVA-B2/blob/master/S15/Modules/Data_Transform.py
-  https://github.com/JahnaviRamagiri/EVA-B2/blob/master/S15/Modules/Custom_Dataset.py
   
+  https://github.com/JahnaviRamagiri/EVA-B2/blob/master/S15/Modules/Results.py
+  
+  https://github.com/JahnaviRamagiri/EVA-B2/blob/master/S15/Modules/Data_Transform.py
+  
+  https://github.com/JahnaviRamagiri/EVA-B2/blob/master/S15/Modules/Custom_Dataset.py
+
+  
+The link to the modularised code is:
   **Code Implementation:**
    https://github.com/JahnaviRamagiri/EVA-B2/blob/master/S15/Code_Implementation/S15_FinalModular.ipynb
   
