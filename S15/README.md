@@ -180,7 +180,7 @@ After going through various models which included ResNEt18, DenseNEt among other
 
 UNET Architechture:
 
-![](RackMultipart20200809-4-6dxtsk_html_17b96abe10c1826e.png)
+![](https://github.com/JahnaviRamagiri/EVA-B2/blob/master/S15/Images/UNet%20Architecture.png)
 
 UNet, evolved from the traditional convolutional neural network, was first designed and applied in 2015 to process biomedical images. As a general convolutional neural network focuses its task on image classification, where input is an image and output is one label, but in biomedical cases, it requires us not only to distinguish whether there is a disease, but also to localise the area of abnormality.
 
@@ -219,7 +219,7 @@ Mask Loss - BCE
 
 Depth Loss - BCE
 
-Challenges:
+**Challenges:**
 
 - Accessing Dataset: The challenges faced while creating the dataset were numerous. Handling the Dataset and training the model with the custom dataset was the hardest part.
 - While I was trying to attach the dataset to the model, I/O issues were getting raised in colab.
