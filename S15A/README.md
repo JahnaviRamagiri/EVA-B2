@@ -69,7 +69,7 @@ depth images | [0.40361160039901733]| [0.19922664761543274]
     * Now all the white area would have been converted to transparent. Save/Export the image
 * Foreground mask was prepared by using opencv.  
     * Alpha (4th) channel of FG alone is created as separate 1 channel mask image. 
-    * Code: https://github.com/ganeshkcs/EVA4B2/blob/master/S15A/S15_FG_MASK.ipynb
+    * Code: https://github.com/JahnaviRamagiri/EVA-B2/blob/master/S15A/S15_FG_MASK.ipynb
 * **FG BG Preparation**
     * PIL was used
     * FG is overlaid on BG, at (x,y) of BG, using following code :
@@ -97,7 +97,7 @@ depth images | [0.40361160039901733]| [0.19922664761543274]
         * The process is repeated for all FG. At the end, we had 4000 images generated for one BG.
     * Above step was repeated for all 100 BGs and we had 400K images ready
     * Files were written to zip, for easy access. 100 Zip files were created, where each zip file corresponds to 1 BG with 4000 images
-    * Code : https://github.com/ganeshkcs/EVA4B2/blob/master/S15A/S15_ZIP_OVERLAY.ipynb
+    * Code : https://github.com/JahnaviRamagiri/EVA-B2/blob/master/S15A/S15_ZIP_OVERLAY.ipynb
     
  * **Dense Depth Images Preparation**
     * When we ran the model for the fg_bg images, prediction was not good, since all our FGs were either subtle or blending with background.
@@ -135,7 +135,7 @@ depth images | [0.40361160039901733]| [0.19922664761543274]
  * **Dataset Statistics** 
       * Wrote a custom Zip dataset loader, using pytorch, to read the images
       * mean and std where calculated
-      * Code : https://github.com/ganeshkcs/EVA4B2/blob/master/S15A/S15_Statistics.ipynb
+      * Code : https://github.com/JahnaviRamagiri/EVA-B2/blob/master/S15A/S15_Statistics.ipynb
       
 
     
