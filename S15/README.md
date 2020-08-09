@@ -187,8 +187,7 @@ depth images | [0.40361160039901733]| [0.19922664761543274]
   https://github.com/JahnaviRamagiri/EVA-B2/blob/master/S15/Modules/Custom_Dataset.py
   
   **Code Implementation:**
-  https://github.com/JahnaviRamagiri/EVA-B2/blob/master/S15/oS15model_4kE1_1_F1.ipynb
-  https://github.com/JahnaviRamagiri/EVA-B2/blob/master/S15/Code_Implementation/S15_FinalModular.ipynb
+   https://github.com/JahnaviRamagiri/EVA-B2/blob/master/S15/Code_Implementation/S15_FinalModular.ipynb
   
   **Results:**
   ![Actual and Predicted Mask](https://github.com/JahnaviRamagiri/EVA-B2/blob/master/S15/Images/Result_mask.png)
